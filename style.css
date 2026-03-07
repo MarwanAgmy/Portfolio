@@ -126,6 +126,17 @@ body {
     justify-content: center;
 }
 
+.hero-main-icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-main-icon i {
+    filter: drop-shadow(0 0 15px rgba(0, 102, 255, 0.4));
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
