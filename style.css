@@ -129,16 +129,16 @@ body {
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .hero-image {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     animation: scaleIn 1s ease 0.3s backwards;
 }
 
@@ -166,10 +166,15 @@ body {
 }
 
 .hero-text {
+    flex: 0 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero-spacer {
+    flex: 1;
 }
 
 .hero-main-icon {
@@ -772,6 +777,14 @@ body {
         flex-direction: column;
         gap: 3rem;
         padding-top: 2rem;
+    }
+    
+    .hero-spacer {
+        display: none;
+    }
+    
+    .hero-image {
+        justify-content: center;
     }
     
     .image-wrapper {
