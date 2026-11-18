@@ -526,6 +526,8 @@ body {
     box-shadow: var(--shadow);
     transition: var(--transition);
     border: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-item:hover {
@@ -538,6 +540,9 @@ body {
     height: 250px;
     overflow: hidden;
     background: #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio-image img {
@@ -547,12 +552,24 @@ body {
     transition: var(--transition);
 }
 
+.portfolio-image.fit-contain {
+    background: #1c222b;
+}
+
+.portfolio-image.fit-contain img {
+    object-fit: contain;
+    padding: 1.5rem;
+}
+
 .portfolio-item:hover .portfolio-image img {
     transform: scale(1.05);
 }
 
 .portfolio-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .portfolio-info h3 {
@@ -562,8 +579,14 @@ body {
 
 .portfolio-info p {
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.portfolio-info .btn {
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 /* Contact Section */
@@ -754,6 +777,10 @@ body {
 .light-theme .portfolio-item {
     background: var(--light-bg);
     border: 1px solid #d1d9e0;
+}
+
+.light-theme .portfolio-image.fit-contain {
+    background: #eef2f6;
 }
 
 .light-theme .contact {
