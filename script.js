@@ -88,8 +88,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe portfolio items
-document.querySelectorAll('.portfolio-item').forEach(item => {
+// Observe portfolio and certificate items
+document.querySelectorAll('.portfolio-item, .certificate-card').forEach(item => {
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
     item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
