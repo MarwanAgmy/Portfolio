@@ -113,6 +113,50 @@ body {
     color: var(--primary-color);
 }
 
+/* Nav Right & CV Button */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.25rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 14px rgba(0, 102, 255, 0.3);
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-cv:hover {
+    background: linear-gradient(135deg, #1a75ff, #0047b3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 102, 255, 0.5);
+    color: var(--white);
+}
+
+.btn-cv:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.3);
+}
+
+.btn-cv i {
+    font-size: 1rem;
+    transition: transform 0.25s ease;
+}
+
+.btn-cv:hover i {
+    transform: scale(1.15);
+}
+
 /* Hero Section */
 .hero {
     /* dark theme hero matching experience section */
@@ -958,8 +1002,32 @@ body {
 }
 
 @media (max-width: 900px) {
+    .navbar .container {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .nav-left {
+        order: 1;
+    }
+
+    .nav-right {
+        order: 2;
+        margin-left: auto;
+    }
+
     .nav-menu {
         gap: 1.2rem;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 0.4rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .light-theme .nav-menu {
+        border-top-color: rgba(0, 0, 0, 0.06);
     }
 
     .hero-content {
@@ -985,6 +1053,11 @@ body {
 @media (max-width: 480px) {
     .nav-brand {
         font-size: 1.2rem;
+    }
+
+    .btn-cv {
+        padding: 0.45rem 0.95rem;
+        font-size: 0.85rem;
     }
 
     .nav-menu {
