@@ -564,6 +564,14 @@ body {
     max-width: 210px;
 }
 
+.portfolio-image.fit-contain.notes-image {
+    background: #151419;
+}
+
+.portfolio-image.fit-contain.notes-image img {
+    padding: 0.5rem;
+}
+
 .portfolio-image.fit-contain img {
     object-fit: contain;
     padding: 1.5rem;
@@ -793,6 +801,10 @@ body {
 
 .light-theme .portfolio-image.fit-contain.bookly-image {
     background: #100b20;
+}
+
+.light-theme .portfolio-image.fit-contain.notes-image {
+    background: #151419;
 }
 
 .light-theme .contact {
