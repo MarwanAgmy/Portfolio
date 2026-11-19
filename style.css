@@ -556,6 +556,14 @@ body {
     background: #1c222b;
 }
 
+.portfolio-image.fit-contain.bookly-image {
+    background: #100b20;
+}
+
+.portfolio-image.fit-contain.bookly-image img {
+    max-width: 210px;
+}
+
 .portfolio-image.fit-contain img {
     object-fit: contain;
     padding: 1.5rem;
@@ -781,6 +789,10 @@ body {
 
 .light-theme .portfolio-image.fit-contain {
     background: #eef2f6;
+}
+
+.light-theme .portfolio-image.fit-contain.bookly-image {
+    background: #100b20;
 }
 
 .light-theme .contact {
